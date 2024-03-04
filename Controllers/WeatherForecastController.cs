@@ -8,12 +8,13 @@ namespace DotnetAPI.Controllers;
 
 
 public class WeatherForecastController : ControllerBase
+
 {
     private readonly string[] _summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Sweltering", "Scorching"
 };
-[HttpGet("", Name ="GetWeatherFoecast")]
+    [HttpGet("", Name = "GetWeatherFoecast")]
     public IEnumerable<WeatherForecast> GetFiveDayForecast()
     {
         var forecast = Enumerable.Range(1, 5).Select(index =>
@@ -27,7 +28,7 @@ public class WeatherForecastController : ControllerBase
         return forecast;
     }
 }
-    public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-    {
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-    }
+public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+{
+    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+}
