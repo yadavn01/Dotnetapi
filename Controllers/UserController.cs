@@ -10,10 +10,16 @@ namespace DotnetAPI.Controllers;
 public class UserController : ControllerBase
 
 {
+    DataContextDapper _dapper;
     public UserController(IConfiguration config)
     {
-        Console.WriteLine("gets here");
-        Console.WriteLine(config.GetConnectionString("DefaultConnection"));
+        _dapper = new DataContextDapper(config);
+    }
+    [HttpGet("TestConnection")]
+
+    public DateTime TestConnection()
+    {
+        return _dapper.LoadDataSingle<DateTime>("SELECT GETDATE()");
     }
 
     [HttpGet("GetUsers/{testValue}")]
