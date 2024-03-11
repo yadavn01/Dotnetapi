@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tuUzr8cxzYNgJ+wAwmLm/oxps+CdMX7uMm2mQNI7FqlquDeuZ55fyWYh+jqyYoG4+dn5xsH35+wsE079OeO3jA==",
+  "dgSpecHash": "S2hlrwgu98LvR3aNJHCKzTiiAhzwlm0ePCUbtVikgSHnm/Sb/V5h6T8Cg/mbAOKtL9FTYq9z/7OqEDRd6HtDoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Naman.yadav\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj",
+  "projectFilePath": "C:\\Users\\Naman.yadav\\OneDrive - Juvare\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Naman.yadav\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Naman.yadav\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
@@ -53,12 +53,5 @@
     "C:\\Users\\Naman.yadav\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Naman.yadav\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Naman.yadav\\Documents\\Perosnal\\Dotnetapi\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
