@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Naman.yadav\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj": {}
+    "C:\\Users\\Naman.yadav\\OneDrive - Juvare\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Naman.yadav\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj": {
+    "C:\\Users\\Naman.yadav\\OneDrive - Juvare\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Naman.yadav\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Naman.yadav\\OneDrive - Juvare\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj",
         "projectName": "DotnetAPI",
-        "projectPath": "C:\\Users\\Naman.yadav\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj",
+        "projectPath": "C:\\Users\\Naman.yadav\\OneDrive - Juvare\\Documents\\Perosnal\\Dotnetapi\\DotnetAPI.csproj",
         "packagesPath": "C:\\Users\\Naman.yadav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Naman.yadav\\Documents\\Perosnal\\Dotnetapi\\obj\\",
+        "outputPath": "C:\\Users\\Naman.yadav\\OneDrive - Juvare\\Documents\\Perosnal\\Dotnetapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Naman.yadav\\AppData\\Roaming\\NuGet\\NuGet.Config"

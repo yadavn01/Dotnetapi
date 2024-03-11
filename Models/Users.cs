@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration.UserSecrets;
 
+//users model need to add in MS azure data studio
 namespace DotnetAPI
 {
     public partial class Users
