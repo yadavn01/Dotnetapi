@@ -22,15 +22,15 @@ public class UserController : ControllerBase
         return _dapper.LoadDataSingle<DateTime>("SELECT GETDATE()");
     }
 
-    [HttpGet("GetUsers/{testValue}")]
-    public string[] GetUsers(string testValue)
+    [HttpGet("GetUsers")]
+    public IEnumerable<User> GetUsers()
     {
-        string[] responseArray = new string[] {
-            "test1",
-            "test2",
-            "test3",
-            testValue
-        };
-        return responseArray;
+
+    }
+
+    [HttpGet("GetSingleUser/{userId}")]
+    public User GetSingleUser(int userId)
+    {
+
     }
 }
