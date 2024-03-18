@@ -22,6 +22,7 @@ public class UserController : ControllerBase
         return _dapper.LoadDataSingle<DateTime>("SELECT GETDATE()");
     }
 
+
     [HttpGet("GetUsers/{testValue}")]
      public IEnumerable<User> GetUsers()
     {
@@ -60,5 +61,6 @@ public class UserController : ControllerBase
                 WHERE UserId = " + userId.ToString(); //"7"
         User user = _dapper.LoadDataSingle<User>(sql);
         return user;
+
     }
 }
