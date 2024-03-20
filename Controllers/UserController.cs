@@ -24,7 +24,7 @@ public class UserController : ControllerBase
 
 
     [HttpGet("GetUsers/{testValue}")]
-     public IEnumerable<User> GetUsers()
+    public IEnumerable<User> GetUsers()
     {
         string sql = @"
             SELECT [UserId],
@@ -46,7 +46,7 @@ public class UserController : ControllerBase
         // .ToArray();
     }
 
-        [HttpGet("GetSingleUser/{userId}")]
+    [HttpGet("GetSingleUser/{userId}")]
     // public IEnumerable<User> GetUsers()
     public User GetSingleUser(int userId)
     {
@@ -62,5 +62,63 @@ public class UserController : ControllerBase
         User user = _dapper.LoadDataSingle<User>(sql);
         return user;
 
+    }
+
+    // insert statement for azure db
+
+    // SELECT[UserId],
+    //             [FirstName],
+    //             [LastName],
+    //             [Email],
+    //             [Gender],
+    //             [Active]
+    // FROM TutorialAppSchema.Users
+
+    // INSERT INTO TutorialAppSchema.Users(
+    //     [FirstName],
+    //     [LastName],
+    //     [Email],
+    //     [Gender],
+    //     [Active]
+    //     ) VALUES (
+    //     [FirstName],
+    //     [LastName],
+    //     [Email],
+    //     [Gender],
+    //     [Active]
+    //     )
+
+    // UPDATE TutorialAppSchema.Users
+    // SET [FirstName] = '',
+    //     [LastName] = '',
+    //     [Email] = '',
+    //     [Gender] = '',
+    //     [Active] =
+    //     WHERE UserId =
+
+
+
+    [HttpPut("EditUser")]
+    public IActionResult EditUser()
+    {
+        string sql = @"
+    UPDATE TutorialAppSchema.Users
+    SET [FirstName] = '',
+        [LastName] = '',
+        [Email] = '',
+        [Gender] = '',
+        [Active] =  
+        WHERE UserId = 
+ 
+        ";
+        return Ok();
+    }
+
+    [HttpPost("AddUser")]
+    public IActionResult AddUser()
+    {
+        string sql = @"
+        ";
+        return Ok();
     }
 }
