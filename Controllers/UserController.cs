@@ -100,25 +100,51 @@ public class UserController : ControllerBase
 
     [HttpPut("EditUser")]
     public IActionResult EditUser()
-    {
+      {
         string sql = @"
-    UPDATE TutorialAppSchema.Users
-    SET [FirstName] = '',
-        [LastName] = '',
-        [Email] = '',
-        [Gender] = '',
-        [Active] =  
-        WHERE UserId = 
- 
-        ";
-        return Ok();
+        UPDATE TutorialAppSchema.Users
+            SET [FirstName] = '" + user.FirstName + 
+                "', [LastName] = '" + user.LastName +
+                "', [Email] = '" + user.Email + 
+                "', [Gender] = '" + user.Gender + 
+                "', [Active] = '" + user.Active + 
+            "' WHERE UserId = " + user.UserId;
+        
+        Console.WriteLine(sql);
+
+        if (_dapper.ExecuteSql(sql))
+        {
+            return Ok();
+        } 
+
+        throw new Exception("Failed to Update User");
     }
 
     [HttpPost("AddUser")]
     public IActionResult AddUser()
-    {
-        string sql = @"
-        ";
-        return Ok();
+  {
+        string sql = @"INSERT INTO TutorialAppSchema.Users(
+                [FirstName],
+                [LastName],
+                [Email],
+                [Gender],
+                [Active]
+            ) VALUES (" +
+                "'" + user.FirstName + 
+                "', '" + user.LastName +
+                "', '" + user.Email + 
+                "', '" + user.Gender + 
+                "', '" + user.Active + 
+            "')";
+        
+        Console.WriteLine(sql);
+
+        if (_dapper.ExecuteSql(sql))
+        {
+            return Ok();
+        } 
+
+        throw new Exception("Failed to Add User");
     }
+
 }
