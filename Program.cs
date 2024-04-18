@@ -39,7 +39,7 @@ else {
         app.UseCors("ProdCors");
         app.UseHttpsRedirection();
 }
-
+ 
 app.MapControllers();
 
 
