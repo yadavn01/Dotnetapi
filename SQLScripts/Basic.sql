@@ -33,3 +33,55 @@ SELECT  [ComputerId]
         , [Price]
         , [VideoCard]
   FROM  TutorialAppSchema.Computer;
+
+  INSERT INTO TutorialAppSchema.Computer ([Motherboard]
+                                        , [CPUCores]
+                                        , [HasWifi]
+                                        , [HasLTE]
+                                        , [ReleaseDate]
+                                        , [Price]
+                                        , [VideoCard])
+VALUES ('Sample-Motherboard'
+        , 5
+        , 2  -- true
+        , 1                         -- true
+        , GETDATE ()
+        , 1000.28
+        , 'Sample-VideoCard');
+
+-- DELETE FROM TutorialAppSchema.Computer WHERE ReleaseDate > '2018-10-31'
+DELETE  FROM TutorialAppSchema.Computer
+ WHERE  ComputerId = 6;
+
+UPDATE  TutorialAppSchema.Computer
+   SET  Motherboard = 'Obsolete'
+ WHERE  ComputerId = 8;
+
+SELECT  [ComputerId]
+        , [Motherboard]
+        , ISNULL ([CPUCores], 4) AS CPUCores
+        , [HasWifi]
+        , [HasLTE]
+        , [ReleaseDate]
+        , [Price]
+        , [VideoCard]
+  FROM  TutorialAppSchema.Computer;
+
+UPDATE  TutorialAppSchema.Computer
+   SET  CPUCores = 4
+ WHERE  CPUCores IS NULL;
+
+SELECT  [ComputerId]
+        , [Motherboard]
+        , ISNULL ([CPUCores], 4) AS CPUCores
+        , [HasWifi]
+        , [HasLTE]
+        , [ReleaseDate]
+        , [Price]
+        , [VideoCard]
+  FROM  TutorialAppSchema.Computer
+ ORDER BY
+    HasLTE DESC
+    , ReleaseDate DESC;
+
+TRUNCATE TABLE TutorialAppSchema.Computer;
