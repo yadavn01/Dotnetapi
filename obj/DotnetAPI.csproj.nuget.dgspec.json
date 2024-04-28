@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ynama\\dotnet-course-code\\DotnetAPI\\DotnetAPI.csproj": {}
+    "C:\\Users\\ynama\\dotnet-course-code\\DotNetAPI\\DotnetAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ynama\\dotnet-course-code\\DotnetAPI\\DotnetAPI.csproj": {
+    "C:\\Users\\ynama\\dotnet-course-code\\DotNetAPI\\DotnetAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ynama\\dotnet-course-code\\DotnetAPI\\DotnetAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ynama\\dotnet-course-code\\DotNetAPI\\DotnetAPI.csproj",
         "projectName": "DotnetAPI",
-        "projectPath": "C:\\Users\\ynama\\dotnet-course-code\\DotnetAPI\\DotnetAPI.csproj",
+        "projectPath": "C:\\Users\\ynama\\dotnet-course-code\\DotNetAPI\\DotnetAPI.csproj",
         "packagesPath": "C:\\Users\\ynama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ynama\\dotnet-course-code\\DotnetAPI\\obj\\",
+        "outputPath": "C:\\Users\\ynama\\dotnet-course-code\\DotNetAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ynama\\AppData\\Roaming\\NuGet\\NuGet.Config",

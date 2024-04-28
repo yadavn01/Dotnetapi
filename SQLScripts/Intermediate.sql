@@ -37,3 +37,13 @@ SELECT  Users.UserId
 CREATE NONCLUSTERED INDEX ix_UserJobInfo_JobTitle
     ON TutorialAppSchema.UserJobInfo (JobTitle)
     INCLUDE (Department);
+
+
+    
+    SELECT  GETDATE ();
+
+SELECT  DATEADD (YEAR, -5, GETDATE ());
+
+SELECT  DATEDIFF (MINUTE, DATEADD (YEAR, -5, GETDATE ()), GETDATE ());  -- Returns Positive
+
+SELECT  DATEDIFF (MINUTE, GETDATE (), DATEADD (YEAR, -5, GETDATE ()));  -- Returns Negative
